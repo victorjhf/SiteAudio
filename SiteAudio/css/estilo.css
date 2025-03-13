@@ -1,0 +1,29 @@
+/* Adicione este código no início do seu arquivo CSS */
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+body {
+  font-family: "Afacad Flux", sans-serif;
+  color: black;
+  font-weight: 300;
+}
+
+#fontePrincipal{
+
+  font-family: "Afacad Flux", sans-serif;
+  color: black;
+  font-weight: 500;
+  
+}
+
+#tempo{
+  font-family: "Afacad Flux", sans-serif;
+  color:black;
+}
+
+
+.bt-env{
+
+  background-color:ivory;
+  font-weight: 400;
+  font-size:large;
+}
