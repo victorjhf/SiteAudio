@@ -1,7 +1,10 @@
 function gerarSons(tempo){
 
+
+    var EscolhaAudio = Math.floor(Math.random() * 15);
+
             
-    var caminho = "Audio/1.mp3";
+    var caminho = "Audio/"+EscolhaAudio+".mp3";
 
 
     var select = document.getElementById('tempo');
@@ -10,7 +13,7 @@ function gerarSons(tempo){
 
     var tempoAleatorio = Math.floor(Math.random() * (valorSelecionado - 10000 + 1) + 10000);
 
-    console.log("Som será reproduzido após " + tempoAleatorio / 1000 + " minutos. o numero escolido foi: " + valorSelecionado);
+    console.log("Som será reproduzido após " + tempoAleatorio / 1000 + " Milisegundos. o Audio escolido foi: " + EscolhaAudio);
 
     setTimeout(function() {
         var audio = new Audio(caminho);
@@ -28,32 +31,4 @@ document.getElementById('btnEnviar').addEventListener('click', function() {
     var valorSelecionado = parseInt(select.value);
 
     gerarSons(valorSelecionado);
-
-   /* var caminho = "Audio/1.mp3";
-
-
-    var select = document.getElementById('tempo');
-    var valorSelecionado = parseInt(select.value);
-
-
-    var tempoAleatorio = Math.floor(Math.random() * (valorSelecionado - 10000 + 1) + 10000);
-
-    console.log("Som será reproduzido após " + tempoAleatorio / 1000 + " minutos. o numero escolido foi: " + valorSelecionado);
-
-    setTimeout(function() {
-        var audio = new Audio(caminho);
-        audio.play();
-    }, tempoAleatorio);*/
 });
-
-
-
-
-
-
-/* var caminho = "Audio/1.mp3";
-
-document.getElementById('btnEnviar').addEventListener('click', function() {
-    var audio = new Audio(caminho);
-    audio.play();
-});*/
