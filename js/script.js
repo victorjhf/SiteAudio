@@ -13,8 +13,6 @@ function gerarSons(tempo){
 
     var tempoAleatorio = Math.floor(Math.random() * (valorSelecionado - 10000 + 1) + 10000);
 
-    console.log("Som será reproduzido após " + tempoAleatorio / 1000 + " Milisegundos. o Audio escolido foi: " + EscolhaAudio);
-
     setTimeout(function() {
         var audio = new Audio(caminho);
         audio.play();
@@ -23,12 +21,20 @@ function gerarSons(tempo){
 
 }
 
-
-
 document.getElementById('btnEnviar').addEventListener('click', function() {
+
+    // Pega o botão btnEnviar
+    var botaoEnviar = document.getElementById('btnEnviar');
+
+    botaoEnviar.style.backgroundColor = "green";
+    botaoEnviar.style.color="white"
     
     var select = document.getElementById('tempo');
     var valorSelecionado = parseInt(select.value);
+    setTimeout(function() {
+        botaoEnviar.style.backgroundColor = "";
+        botaoEnviar.style.color=""
+      }, 3000);
 
     gerarSons(valorSelecionado);
 });
