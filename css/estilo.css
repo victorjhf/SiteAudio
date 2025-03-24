@@ -43,3 +43,18 @@ body {
   font-weight: 300;
   
 }
+
+#caixaPrincipal{
+
+ /* text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra de texto */
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra à caixa do */
+
+  border-radius: 10px;
+
+}
+
+#caixaSelecao{
+
+  border-radius: 7px;
+
+}
